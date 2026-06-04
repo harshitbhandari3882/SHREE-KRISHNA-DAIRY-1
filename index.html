@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Dairy Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🥛 Shree Krishna Dairy</h1>
+
+        <div class="card">
+            <h2>Add Daily Record</h2>
+
+            <input type="date" id="date">
+
+            <input type="text" id="customer" placeholder="Customer Name">
+
+            <input type="number" id="liters" placeholder="Milk Liters">
+
+            <input type="number" id="fat" placeholder="Fat %">
+
+            <input type="number" id="cost" placeholder="Purchase Cost ₹">
+
+            <input type="number" id="sale" placeholder="Sale Amount ₹">
+
+            <button onclick="saveRecord()">Save Record</button>
+        </div>
+
+        <div class="card">
+            <h2>Monthly Summary</h2>
+
+            <div id="summary"></div>
+        </div>
+
+        <div class="card">
+            <h2>Records</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Liters</th>
+                        <th>Fat%</th>
+                        <th>Cost</th>
+                        <th>Sale</th>
+                        <th>Profit</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
